@@ -25,5 +25,5 @@ public class ChungNhan {
     @MapsId("manv")
     @ManyToOne
     @JoinColumn(name = "manv")
-    private NhanVien nhanVien;
+    private Nhanvien nhanVien;
 }

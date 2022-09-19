@@ -15,7 +15,7 @@ import javax.persistence.Table;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class NhanVien {
+public class Nhanvien {
     @Id
     private String manv;
     
