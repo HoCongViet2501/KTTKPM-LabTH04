@@ -11,4 +11,6 @@ import java.util.List;
 public interface MayBayRepository extends JpaRepository<MayBay, Integer> {
     @Query(value = "select * from MayBay where tamBay > ?1 ",nativeQuery = true)
     List<MayBay> findMayBayByTamBay(int tambay);
+    
+    List<MayBay> findMayBayByLoai(String loaiMB);
 }
