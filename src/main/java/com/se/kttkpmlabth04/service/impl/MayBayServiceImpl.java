@@ -20,7 +20,9 @@ public class MayBayServiceImpl implements MayBayService {
     }
     
     @Override
-    public List<MayBay> cau7(String loaiMB) {
-        return this.mayBayRepository.findMayBayByLoai(loaiMB);
+    public Integer cau7(String loaiMB) {
+        return this.mayBayRepository.countMayBayByLoai(loaiMB);
     }
+    
+ 
 }

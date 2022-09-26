@@ -23,4 +23,14 @@ public class ChuyenBayServiceImpl implements ChuyenBayService {
     public List<ChuyenBay> cau4(int less, int than) {
         return this.chuyenBayRepository.getChuyenBaysByDodaiLessThanAndDodaiGreaterThan(less, than);
     }
+    
+    @Override
+    public List<ChuyenBay> cau5(String gaDi, String gaDen) {
+        return this.chuyenBayRepository.getChuyenBaysByGadiAndGaden(gaDi, gaDen);
+    }
+    
+    @Override
+    public Integer cau6(String gaDi) {
+        return this.chuyenBayRepository.countChuyenBayByGadi(gaDi);
+    }
 }

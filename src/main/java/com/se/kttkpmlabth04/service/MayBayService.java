@@ -7,5 +7,6 @@ import java.util.List;
 public interface MayBayService {
     List<MayBay> cau2(int tamBay);
     
-    List<MayBay> cau7(String loaiMB);
+    Integer cau7(String loaiMB);
+    
 }

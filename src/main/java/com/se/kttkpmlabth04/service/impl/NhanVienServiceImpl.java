@@ -15,7 +15,17 @@ public class NhanVienServiceImpl implements NhanVienService {
     private NhanVienRepository nhanVienRepository;
     
     @Override
-    public List<Nhanvien> cau2(double luong) {
+    public List<Nhanvien> cau3(double luong) {
         return this.nhanVienRepository.getAllByLuongLessThan(luong);
+    }
+    
+    @Override
+    public Double cau8() {
+        return this.nhanVienRepository.getTongLuongPhaiTra();
+    }
+    
+    @Override
+    public List<String> cau9() {
+        return this.nhanVienRepository.getManvFromMaybay();
     }
 }
