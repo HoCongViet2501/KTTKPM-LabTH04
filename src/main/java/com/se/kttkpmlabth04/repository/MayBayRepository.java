@@ -13,4 +13,9 @@ public interface MayBayRepository extends JpaRepository<MayBay, Integer> {
     List<MayBay> findMayBayByTamBay(int tambay);
     
     Integer countMayBayByLoai(String loaiMB);
+    
+    @Query(value = "select mb.mamb from maybay mb join chungnhan cn on cn.mamb=mb.mamb" +
+            " join nhanvien nv on nv.manv=cn.manv " +
+            "where nv.ten like '%Nguyen%'", nativeQuery = true)
+    List<Integer> findMaMBByTenNV();
 }

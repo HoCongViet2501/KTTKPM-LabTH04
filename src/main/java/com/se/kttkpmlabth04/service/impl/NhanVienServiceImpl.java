@@ -28,4 +28,14 @@ public class NhanVienServiceImpl implements NhanVienService {
     public List<String> cau9() {
         return this.nhanVienRepository.getManvFromMaybay();
     }
+    
+    @Override
+    public List<Nhanvien> cau10(int maMB) {
+        return this.nhanVienRepository.getNhanvienByMaMB(maMB);
+    }
+    
+    @Override
+    public List<String> cau12() {
+        return this.nhanVienRepository.getManvFrom2LoaiMayBay();
+    }
 }

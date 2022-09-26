@@ -11,5 +11,8 @@ public interface NhanVienService {
     
     List<String> cau9();
     
-    List<Nhanvien> cau10();
+    List<Nhanvien> cau10(int maMB);
+    
+    List<String> cau12();
+    
 }

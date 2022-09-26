@@ -33,4 +33,16 @@ public class NhanVienController {
     public ResponseEntity<Object> cau9() {
         return ResponseEntity.ok().body(this.nhanVienService.cau9());
     }
+    
+    @GetMapping("/cau10/{mamb}")
+    @Operation(summary = "cau10")
+    public ResponseEntity<Object> cau10(@PathVariable int mamb) {
+        return ResponseEntity.ok().body(this.nhanVienService.cau10(mamb));
+    }
+    
+    @GetMapping("/cau12")
+    @Operation(summary = "cau12")
+    public ResponseEntity<Object> cau12() {
+        return ResponseEntity.ok().body(this.nhanVienService.cau12());
+    }
 }

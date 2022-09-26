@@ -1,6 +1,7 @@
 package com.se.kttkpmlabth04.service.impl;
 
 import com.se.kttkpmlabth04.entity.MayBay;
+import com.se.kttkpmlabth04.entity.Nhanvien;
 import com.se.kttkpmlabth04.repository.MayBayRepository;
 import com.se.kttkpmlabth04.service.MayBayService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +25,10 @@ public class MayBayServiceImpl implements MayBayService {
         return this.mayBayRepository.countMayBayByLoai(loaiMB);
     }
     
- 
+    @Override
+    public List<Integer> cau11() {
+        return this.mayBayRepository.findMaMBByTenNV();
+    }
+    
+    
 }
