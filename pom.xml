@@ -11,11 +11,11 @@
     <groupId>com.se</groupId>
     <artifactId>KTTKPM-LabTH04</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>KTTKPM-LabTH04</name>
     <description>KTTKPM-LabTH04</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
     </properties>
     <dependencies>
         <dependency>

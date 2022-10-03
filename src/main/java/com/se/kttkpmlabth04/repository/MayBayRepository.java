@@ -18,4 +18,5 @@ public interface MayBayRepository extends JpaRepository<MayBay, Integer> {
             " join nhanvien nv on nv.manv=cn.manv " +
             "where nv.ten like '%Nguyen%'", nativeQuery = true)
     List<Integer> findMaMBByTenNV();
+    
 }
